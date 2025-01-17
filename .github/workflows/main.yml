@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Obter o codigo do projeto
-        uses: actions/checkouts@v4
+        uses: actions/checkout@v4
 
       - name: Autenticar no Docker Hub
         uses: docker/login-action@v3
