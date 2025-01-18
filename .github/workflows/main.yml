@@ -46,7 +46,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Configurar Kubectl
-        run: aws eks update-kubeconfig --name aula-eks
+        run: aws eks update-kubeconfig --name default
 
       - name: Aplicar os manifestos no kubernets
         uses: Azure/k8s-deploy@v5
